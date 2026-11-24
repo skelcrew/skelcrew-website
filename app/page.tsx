@@ -2,7 +2,7 @@ import { Footer } from "@/components/footer";
 import { InstallCommand } from "@/components/install";
 import { Nav } from "@/components/nav";
 import { SignupForm } from "@/components/signup";
-import { Container, GithubIcon, Label } from "@/components/ui";
+import { Container, GithubIcon } from "@/components/ui";
 import { site } from "@/lib/site";
 
 // Launch page: a short introduction, the install command and the mailing list for release
@@ -33,7 +33,6 @@ export default function Home() {
       <Nav />
       <main>
         <Container className="pt-20 pb-20 md:pt-32 md:pb-32">
-          <Label className="mb-8">Out now</Label>
           <h1 className="mb-8 max-w-[15ch] text-[clamp(44px,6.6vw,96px)] font-semibold leading-[0.98] tracking-[-0.045em]">
             Your own team of coding agents, working while you're away.
           </h1>
