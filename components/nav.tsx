@@ -1,7 +1,7 @@
 import { site } from "@/lib/site";
 import { Container, GithubIcon, Logo } from "./ui";
 
-// Pre-launch nav: just the mark. Section links come back with the full page after launch.
+// Nav: the mark and the GitHub link. Section links come back with the full page.
 export function Nav() {
   return (
     <header className="border-b border-line">

@@ -1,11 +1,12 @@
 import { Footer } from "@/components/footer";
+import { InstallCommand } from "@/components/install";
 import { Nav } from "@/components/nav";
 import { SignupForm } from "@/components/signup";
-import { Container, Label } from "@/components/ui";
+import { Container, GithubIcon, Label } from "@/components/ui";
 import { site } from "@/lib/site";
 
-// Pre-launch page: a short introduction and the mailing list. The full page's sections
-// still live in components/ for after launch.
+// Launch page: a short introduction, the install command and the mailing list for release
+// updates. The full page's sections still live in components/.
 
 const points = [
   [
@@ -32,7 +33,7 @@ export default function Home() {
       <Nav />
       <main>
         <Container className="pt-20 pb-20 md:pt-32 md:pb-32">
-          <Label className="mb-8">Launching November 2026</Label>
+          <Label className="mb-8">Out now</Label>
           <h1 className="mb-8 max-w-[15ch] text-[clamp(44px,6.6vw,96px)] font-semibold leading-[0.98] tracking-[-0.045em]">
             Your own team of coding agents, working while you're away.
           </h1>
@@ -41,10 +42,14 @@ export default function Home() {
             own sandbox, on your server. They pick up work in the apps your team already uses and
             run on whichever harness you prefer. You close the laptop. You decide what merges.
           </p>
-          <SignupForm id="email-top" button="Tell me when it's out" />
-          <p className="mt-4 text-sm text-muted">
-            I'll email you when Skelcrew launches. No newsletter.
-          </p>
+          <InstallCommand />
+          <a
+            href={site.repo}
+            className="mt-5 inline-flex items-center gap-2 text-fg-2 underline underline-offset-4 hover:text-fg"
+          >
+            <GithubIcon size={16} />
+            View source on GitHub
+          </a>
 
           <ul className="mt-20 grid gap-6 border-t border-line pt-10 md:mt-28 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:grid-cols-4 lg:gap-x-10">
             {points.map(([title, text]) => (
@@ -54,6 +59,12 @@ export default function Home() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-16 border-t border-line pt-10">
+            <p className="mb-1 font-medium text-fg">Get release updates</p>
+            <p className="mb-5 text-fg-2">An email when a new version is out. No newsletter.</p>
+            <SignupForm id="email-updates" button="Get release updates" />
+          </div>
 
           <p className="mt-16 max-w-150 text-fg-2 leading-relaxed">
             Free and open source. Built in public by{" "}

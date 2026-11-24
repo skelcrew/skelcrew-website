@@ -19,7 +19,7 @@ a Vercel preview link; check your change there too.
   The script fails on console errors and on pages that scroll sideways.
 - Static export only. No server code, no API routes, no `next/image` optimisation, nothing that
   needs a Node server at runtime. Pages are server components; add `"use client"` only to
-  components that need state or effects (today: `demo.tsx`, `signup.tsx`).
+  components that need state or effects (today: `demo.tsx`, `install.tsx`, `signup.tsx`).
 - Style with Tailwind classes, in the component. Use the tokens in `app/globals.css`
   (`bg-bg`, `bg-panel`, `text-fg`, `text-fg-2`, `text-muted`, `text-faint`, `border-line`,
   `text-accent`, ...) rather than raw colours. The site is dark only.
@@ -28,7 +28,7 @@ a Vercel preview link; check your change there too.
 - Terminal snippets use `TermText` with `{tone:text}` markup, for example `{ok:✓ passing}`.
   Never write `[name:value]` anywhere in source: Tailwind reads it as an arbitrary CSS
   property, and a value containing `/*` silently breaks the whole stylesheet.
-- Links, the email address and the signup endpoint live in `lib/site.ts`. GitHub links are
+- Links, the install command, the email address and the signup endpoint live in `lib/site.ts`. GitHub links are
   hidden while `site.repoPublic` is false.
 - Copy: short, plain sentences. No hype words. Don't claim anything about the product that
   isn't true yet; label illustrative output as illustrative.

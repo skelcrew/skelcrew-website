@@ -15,7 +15,7 @@ export default function Thanks() {
           <Label className="mb-6 text-ok">Confirmed</Label>
           <H2 className="mb-6">You're on the list.</H2>
           <p className="mb-10 max-w-130 text-lg text-fg-2">
-            Thanks for confirming. I'll email you when Skelcrew launches.
+            Thanks for confirming. I'll email you when a new version of Skelcrew is out.
           </p>
           <a href="/" className={buttonStyles.ghost}>
             Back to skelcrew.dev

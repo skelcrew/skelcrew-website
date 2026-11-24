@@ -2,7 +2,17 @@
 
 > Skelcrew is your own team of coding agents, working while you're away. You brief a lead agent in the harness you already use. It writes the tasks and hands each one to a builder, and a fresh reviewer on another model checks every pull request. The team works on your own server, so you can close the laptop. You decide what merges. Open source.
 
-Status: early. Earlier versions ran tasks to pull requests through phases, roles and gates defined as files; the current rewrite, started in November 2026, organises agents as a small team instead. No public release yet. Launching November 2026. Sign up for launch news at https://skelcrew.dev
+Status: early. Earlier versions ran tasks to pull requests through phases, roles and gates defined as files; the current rewrite, started in November 2026, organises agents as a small team instead. Released November 2026.
+
+## Install
+
+```sh
+curl -fsSL https://skelcrew.dev/install.sh | sh
+```
+
+Source: https://github.com/skelcrew/skelcrew
+
+Release updates by email: https://skelcrew.dev
 
 ## The team
 
