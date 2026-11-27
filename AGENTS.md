@@ -34,6 +34,7 @@ a Vercel preview link; check your change there too.
   isn't true yet; label illustrative output as illustrative.
 - Keep `public/llms.txt` in step with the page when the product facts change.
 - `/install.sh` (for `curl -fsSL https://skelcrew.dev/install.sh | sh`) is not kept in this repo.
-  A rewrite in `vercel.json` proxies it from `install.sh` on the skelcrew repo's `main` branch and
-  serves it as plain text. Change the script there; never add a copy under `public/`, which would
-  take precedence over the rewrite.
+  A rewrite in `vercel.json` proxies it from the `install.sh` attached to the latest release in the
+  public `skelcrew/releases` repo, and serves it as plain text. The script changes only when a new
+  release is published; never add a copy under `public/`, which would take precedence over the
+  rewrite.
