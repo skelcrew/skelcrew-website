@@ -2,7 +2,7 @@
 export const site = {
   url: "https://skelcrew.dev",
   // Shows the GitHub links in the nav and footer.
-  repoPublic: true,
+  repoPublic: false,
   repo: "https://github.com/skelcrew/skelcrew",
   install: "curl -fsSL https://skelcrew.dev/install.sh | sh",
   email: "hello@skelcrew.dev",
