@@ -2,7 +2,7 @@ import { Footer } from "@/components/footer";
 import { InstallCommand } from "@/components/install";
 import { Nav } from "@/components/nav";
 import { SignupForm } from "@/components/signup";
-import { Container, GithubIcon } from "@/components/ui";
+import { Container } from "@/components/ui";
 import { site } from "@/lib/site";
 
 // Launch page: a short introduction, the install command and the mailing list for release
@@ -42,13 +42,6 @@ export default function Home() {
             run on whichever harness you prefer. You close the laptop. You decide what merges.
           </p>
           <InstallCommand />
-          <a
-            href={site.repo}
-            className="mt-5 inline-flex items-center gap-2 text-fg-2 underline underline-offset-4 hover:text-fg"
-          >
-            <GithubIcon size={16} />
-            View source on GitHub
-          </a>
 
           <ul className="mt-20 grid gap-6 border-t border-line pt-10 md:mt-28 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:grid-cols-4 lg:gap-x-10">
             {points.map(([title, text]) => (
