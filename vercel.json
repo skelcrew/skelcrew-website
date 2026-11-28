@@ -4,7 +4,7 @@
   "rewrites": [
     {
       "source": "/install.sh",
-      "destination": "https://raw.githubusercontent.com/skelcrew/skelcrew/main/install.sh"
+      "destination": "https://github.com/skelcrew/releases/releases/latest/download/install.sh"
     }
   ],
   "headers": [
